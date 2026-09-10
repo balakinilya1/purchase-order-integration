@@ -1,0 +1,7 @@
+# SAP Integration Suite / local files
+*.zip
+*.jar
+*.log
+.env
+*.credentials
+.DS_Store
