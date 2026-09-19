@@ -68,7 +68,7 @@ flowchart LR
 ## Key design decisions
 
 1. **Cloud Integration is the mediation layer.** It isolates Salesforce and SAP data models and keeps connectivity in one place.
-2. **Polling is retained.** A 15-minute schedule is sufficient for the assumed business requirement; an event-driven model can be considered later.
+2. **A scheduled polling pattern is used in this portfolio scenario because it provides a simple and controlled processing model for the assumed business latency.** A 15-minute schedule is sufficient for the assumed business requirement; an event-driven model can be considered later.
 3. **Idempotency is mandatory.** A retry after successful SAP creation must not create a second PO.
 4. **Transient and business errors are separated.** Connectivity/timeouts are retried; validation/business errors go to controlled reprocessing.
 5. **Production configuration is externalized.** Endpoints, credentials and schedule values are not hard-coded in the flow.
@@ -85,7 +85,6 @@ flowchart LR
 - [Deployment](docs/deployment-strategy.md)
 - [Test strategy](docs/test-strategy.md)
 - [ADR](docs/adr-001-integration-mediation.md)
-- [Mission evidence](docs/mission-evidence.md)
 
 ## Scope boundary
 
