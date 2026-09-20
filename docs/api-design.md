@@ -30,6 +30,8 @@ Use the standard **Purchase Order API** where supported:
 POST /sap/opu/odata/sap/API_PURCHASEORDER_PROCESS_SRV/A_PurchaseOrder
 ```
 
+For an applicable SAP S/4HANA release, the integration can use the standard Purchase Order API, such as API_PURCHASEORDER_PROCESS_SRV (OData V2) or the corresponding current Purchase Order API version.
+
 SAP documents this API for Purchase Order integration; communication scenario **SAP_COM_0053** is associated with the API in SAP documentation.
 
 ## API principles

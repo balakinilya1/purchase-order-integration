@@ -1,6 +1,6 @@
 # Purchase Order Mapping
 
-The source mission shows transformation between the CRM and SAP structures. The table below is the **portfolio target mapping**, not a mapping extracted from the mission screenshots.
+The table below is the portfolio target mapping for the Purchase Order scenario. It is a design artefact and is not extracted from a production system or implementation evidence.
 
 | Salesforce | SAP S/4HANA | Rule |
 |---|---|---|
